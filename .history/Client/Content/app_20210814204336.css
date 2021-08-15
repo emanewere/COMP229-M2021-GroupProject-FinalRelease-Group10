@@ -82,6 +82,11 @@ h3{
     color: rgb(209, 206, 206);
 }
 
-h4{
-    text-align:center;
+
+footer {
+    position: relative;
+}
+.copyright{
+    position: absolute;
+    bottom: 0;
 }

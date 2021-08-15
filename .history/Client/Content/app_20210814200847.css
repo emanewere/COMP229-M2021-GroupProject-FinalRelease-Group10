@@ -64,24 +64,10 @@ body {
 }
 
 #grad1 {
-    height: 500px;    
-    background-size: cover;
-    
     background: rgb(25, 21, 77); /* For browsers that do not support gradients */
     background: linear-gradient(rgb(25, 21, 77), rgb(80, 106, 223));
-   
-    
+    background: no-repeat;
 }
-   
 h1 {
-    text-align:center;
-    color: white;
-}
-h3{
-    text-align:center;
-    color: rgb(209, 206, 206);
-}
-
-h4{
     text-align:center;
 }

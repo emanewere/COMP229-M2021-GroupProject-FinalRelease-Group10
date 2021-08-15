@@ -10,27 +10,26 @@
           <div style="font-family:Georgia,serif" class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
               <thead>
-              <th style="color:#D2691E" class="text-center">Round of Eight</th> 
-                <td style="color:white" class="text-center">
-                                   
-                </td>
-                
+                <tr>
+                  <th style="color:#D2691E" class="text-center">Round of Eight</th>                  
+                </tr>
+                <tr></tr>
                 </thead>
                 <tbody>
                 <!-- Template Row -->
                 <% for (let count = 0; count < 1; count++) { %>
-                <tr style="color:white" class="text-center">
+                <tr>
                   <td><%= tournaments.PlayerOne %>    <%= tournaments.ScoreOne %></td>
-                  <td style="color:white" class="text-center"><%= tournaments.PlayerTwo %>    <%= tournaments.ScoreTwo %> </td>
+                  <td class="text-center"><%= tournaments.PlayerTwo %>    <%= tournaments.ScoreTwo %> </td>
                  
                    <% if (tournaments.CompleteTournament != "TRUE" && tournaments.IsActive == "TRUE" ) { %> 
-                  <td style="color:white" class="text-center">
+                  <td class="text-center">
                     <!-- ------------------------ -->
                     <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
                     <!-- ------------------------ -->
                     <% if(displayName) { %>
                     <% if(userName === tournaments.UserName) { %>
-                    <td style="color:white" class="text-center"><a href="/tournaments/<%= tournaments._id %>/one/<%= tournaments.PlayerOne %>/<%= tournaments.PlayerTwo %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/one/<%= tournaments.PlayerOne %>/<%= tournaments.PlayerTwo %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
                      <% } %>
                      
                     <% } %>
@@ -42,18 +41,18 @@
                   
                 </tr>
 
-                <tr style="color:white" class="text-center">
+                <tr>
                   <td><%= tournaments.PlayerThree %>    <%= tournaments.ScoreThree %></td>
-                  <td style="color:white" class="text-center"><%= tournaments.PlayerFour %>    <%= tournaments.ScoreFour %></td>
+                  <td class="text-center"><%= tournaments.PlayerFour %>    <%= tournaments.ScoreFour %></td>
                  
                  <% if (tournaments.CompleteTournament != "TRUE"&& tournaments.IsActive == "TRUE") { %> 
-                  <td style="color:white" class="text-center">
+                  <td class="text-center">
                     <!-- ------------------------ -->
                     <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
                     <!-- ------------------------ -->
                     <% if(displayName) { %>
                     <% if(userName === tournaments.UserName) { %>
-                    <td style="color:white" class="text-center"><a href="/tournaments/<%= tournaments._id %>/two/<%= tournaments.PlayerThree %>/<%= tournaments.PlayerFour %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/two/<%= tournaments.PlayerThree %>/<%= tournaments.PlayerFour %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
                     <% } %>
                     <% } %>
                   </td>
@@ -65,19 +64,19 @@
                 </tr>
 
 
-                <tr style="color:white" class="text-center">
+                <tr>
                   <td><%= tournaments.PlayerFive %>    <%= tournaments.ScoreFive %></td>
-                  <td style="color:white" class="text-center"><%= tournaments.PlayerSix %>    <%= tournaments.ScoreSix %></td>
+                  <td class="text-center"><%= tournaments.PlayerSix %>    <%= tournaments.ScoreSix %></td>
                  
                    <% if (tournaments.CompleteTournament != "TRUE"&& tournaments.IsActive == "TRUE") { %> 
-                  <td style="color:white" class="text-center">
+                  <td class="text-center">
                   
                     <!-- ------------------------ -->
                     <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
                     <!-- ------------------------ -->
                     <% if(displayName) { %>
                     <% if(userName === tournaments.UserName) { %>
-                    <td style="color:white" class="text-center"><a href="/tournaments/<%= tournaments._id %>/three/<%= tournaments.PlayerFive %>/<%= tournaments.PlayerSix %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/three/<%= tournaments.PlayerFive %>/<%= tournaments.PlayerSix %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
                     <% } %>
                     <% } %>
                   </td>
@@ -88,18 +87,18 @@
                   
                 </tr>
 
-                <tr style="color:white" class="text-center">
+                <tr>
                   <td><%= tournaments.PlayerSeven %>    <%= tournaments.ScoreSeven %></td>
-                  <td style="color:white" class="text-center"><%= tournaments.PlayerEight %>    <%= tournaments.ScoreEight %></td>
+                  <td class="text-center"><%= tournaments.PlayerEight %>    <%= tournaments.ScoreEight %></td>
                  
                    <% if (tournaments.CompleteTournament != "TRUE"&& tournaments.IsActive == "TRUE") { %> 
-                  <td style="color:white" class="text-center">
+                  <td class="text-center">
                     <!-- ------------------------ -->
                     <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
                     <!-- ------------------------ -->
                     <% if(displayName) { %>
                     <% if(userName === tournaments.UserName) { %>
-                    <td style="color:white" class="text-center"><a href="/tournaments/<%= tournaments._id %>/four/<%= tournaments.PlayerSeven %>/<%= tournaments.PlayerEight %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/four/<%= tournaments.PlayerSeven %>/<%= tournaments.PlayerEight %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
                     <% } %>
                     <% } %>
                   </td>
@@ -120,30 +119,30 @@
 
             <!-- ROUND OF 4 -->
             <br>
-          <div style="font-family:Georgia,serif" class="table-responsive">
+          <div class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
               <thead>
-                <td>
-                  <th style="color:#D2691E" class="text-center">Round of Four</th>
+                <tr>
+                  <th>Round of four</th>
                   
-                </td>
+                </tr>
                 </thead>
                 <tbody>
                 <!-- Template Row -->
                 <% for (let count = 0; count < 1; count++) { %>
-                <tr style="color:white" class="text-center">
+                <tr>
                   <td><%= tournaments.WinnerFirstQuarterFinal %>    <%= tournaments.ScoreNine %></td>
-                  <td style="color:white" class="text-center"><%= tournaments.WinnerSecondQuarterFinal %>    <%= tournaments.ScoreTen %></td>
+                  <td class="text-center"><%= tournaments.WinnerSecondQuarterFinal %>    <%= tournaments.ScoreTen %></td>
                  
                   <% if (tournaments.CompleteTournament != "TRUE"&& tournaments.IsActive == "TRUE") { %> 
-                  <td style="color:white" class="text-center">
+                  <td class="text-center">
                     <% if (tournaments.WinnerFirstQuaterFinal != "WinnerFirstQuaterFinal"&& tournaments.WinnerSecondQuarterFinal != "WinnerSecondQuarterFinal") { %>
                     <!-- ------------------------ -->
                     <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
                     <!-- ------------------------ -->
                     <% if(displayName) { %>
                     <% if(userName === tournaments.UserName) { %>
-                    <td style="color:white" class="text-center"><a href="/tournaments/<%= tournaments._id %>/five/<%= tournaments.WinnerFirstQuarterFinal %>/<%= tournaments.WinnerSecondQuarterFinal %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/five/<%= tournaments.WinnerFirstQuarterFinal %>/<%= tournaments.WinnerSecondQuarterFinal %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
                     <% } %>
                     <% } %>
                      <% } %>
@@ -154,19 +153,19 @@
                   
                 </tr>
 
-                <tr style="color:white" class="text-center">
+                <tr>
                   <td><%= tournaments.WinnerThirdQuarterFinal %>    <%= tournaments.ScoreEleven %></td>
-                  <td style="color:white" class="text-center"><%= tournaments.WinnerFourthQuarterFinal %>     <%= tournaments.ScoreTwelve %></td>
+                  <td class="text-center"><%= tournaments.WinnerFourthQuarterFinal %>     <%= tournaments.ScoreTwelve %></td>
                  
                   <% if (tournaments.CompleteTournament != "TRUE"&& tournaments.IsActive == "TRUE") { %> 
-                  <td style="color:white" class="text-center">
+                  <td class="text-center">
                   <% if (tournaments.WinnerThirdQuaterFinal != "WinnerThirdQuaterFinal"&& tournaments.WinnerFourthQuarterFinal != "WinnerFourthQuarterFinal") { %>
                     <!-- ------------------------ -->
                     <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
                     <!-- ------------------------ -->
                     <% if(displayName) { %>
                     <% if(userName === tournaments.UserName) { %>
-                    <td style="color:white" class="text-center"><a href="/tournaments/<%= tournaments._id %>/six/<%= tournaments.WinnerThirdQuarterFinal %>/<%= tournaments.WinnerFourthQuarterFinal %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/six/<%= tournaments.WinnerThirdQuarterFinal %>/<%= tournaments.WinnerFourthQuarterFinal %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
                     <% } %>
                     <% } %>
                     <% } %>
@@ -189,10 +188,10 @@
 
           <!-- FINAL -->
           <br>
-          <div style="font-family:Georgia,serif" class="table-responsive">
+          <div class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
               <thead>
-                <tr style="color:#D2691E" class="text-center">
+                <tr>
                   <th>Final</th>
                  
                 </tr>
@@ -200,19 +199,19 @@
                 <tbody>
                 <!-- Template Row -->
                 <% for (let count = 0; count < 1; count++) { %>
-                <tr style="color:white" class="text-center">
+                <tr>
                   <td><%= tournaments.WinnerFirstSemiFinal %>    <%= tournaments.ScoreThirteen %></td>
-                  <td style="color:white" class="text-center"><%= tournaments.WinnerSecondSemiFinal %>    <%= tournaments.ScoreFourteen %></td>
+                  <td class="text-center"><%= tournaments.WinnerSecondSemiFinal %>    <%= tournaments.ScoreFourteen %></td>
                  
                   <% if (tournaments.CompleteTournament != "TRUE"&& tournaments.IsActive == "TRUE") { %> 
-                  <td style="color:white" class="text-center">
+                  <td class="text-center">
                   <% if (tournaments.WinnerFirstSemiFinal != "WinnerFirstSemiFinal"&& tournaments.WinnerSecondSemiFinal != "WinnerSecondSemiFinal") { %>
                     <!-- ------------------------ -->
                     <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
                     <!-- ------------------------ -->
                     <% if(displayName) { %>
                     <% if(userName === tournaments.UserName) { %>
-                    <td style="color:white" class="text-center"><a href="/tournaments/<%= tournaments._id %>/seven/<%= tournaments.WinnerFirstSemiFinal %>/<%= tournaments.WinnerSecondSemiFinal %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/seven/<%= tournaments.WinnerFirstSemiFinal %>/<%= tournaments.WinnerSecondSemiFinal %>" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</a></td>
                     <% } %>
                     <% } %>
                     <% } %>
@@ -233,10 +232,10 @@
 
           <!-- WINNER -->
           <br>
-          <div style="font-family:Georgia,serif" class="table-responsive">
+          <div class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
               <thead>
-                <tr style="color:#D2691E" class="text-center">
+                <tr>
                   <th>Winner</th>
                   
                 </tr>
@@ -244,11 +243,11 @@
                 <tbody>
                 <!-- Template Row -->
                 <% for (let count = 0; count < 1; count++) { %>
-                <tr style="color:white" class="text-center">
+                <tr>
                   <td><%= tournaments.WinnerFinal %></td>
                   
                 <% if (tournaments.CompleteTournament != "TRUE"&& tournaments.IsActive === "TRUE") { %>   
-                <td style="color:white" class="text-center">
+                <td class="text-center">
                     <!-- ------------------------ -->
                     <!-- COMPLETE A TOURNAMENT BUTTON HAS BEEN ADDED HERE -->
                     <!-- ------------------------ -->
@@ -262,7 +261,7 @@
                  <% } %> 
 
                  <% if ( tournaments.IsActive === "FALSE") { %>   
-                <td style="color:white" class="text-center">
+                <td class="text-center">
                     <!-- ------------------------ -->
                     <!-- ACTIVATE TOURNAMENT BUTTON HAS BEEN ADDED HERE -->
                     <!-- ------------------------ -->
@@ -270,7 +269,7 @@
                     <i class="fa fa-check-square-o"></i> 
                     <% if(displayName) { %>
                     <% if(userName === tournaments.UserName) { %>
-                    <td style="color:white" class="text-center"><a href="/tournaments/<%= tournaments._id %>/activate" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i>Activate Tournament</a></td>
+                    <td class="text-center"><a href="/tournaments/<%= tournaments._id %>/activate" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i>Activate Tournament</a></td>
                     <% } %>
                     <% } %>
                   </td>

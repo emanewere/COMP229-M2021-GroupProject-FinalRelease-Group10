@@ -124,14 +124,14 @@
             <table class="table table-bordered table-striped table-hover">
               <thead>
                 <td>
-                  <th style="color:#D2691E" class="text-center">Round of Four</th>
+                  Round of Four
                   
                 </td>
                 </thead>
                 <tbody>
                 <!-- Template Row -->
                 <% for (let count = 0; count < 1; count++) { %>
-                <tr style="color:white" class="text-center">
+                <tr>
                   <td><%= tournaments.WinnerFirstQuarterFinal %>    <%= tournaments.ScoreNine %></td>
                   <td style="color:white" class="text-center"><%= tournaments.WinnerSecondQuarterFinal %>    <%= tournaments.ScoreTen %></td>
                  
@@ -154,7 +154,7 @@
                   
                 </tr>
 
-                <tr style="color:white" class="text-center">
+                <tr>
                   <td><%= tournaments.WinnerThirdQuarterFinal %>    <%= tournaments.ScoreEleven %></td>
                   <td style="color:white" class="text-center"><%= tournaments.WinnerFourthQuarterFinal %>     <%= tournaments.ScoreTwelve %></td>
                  
@@ -192,7 +192,7 @@
           <div style="font-family:Georgia,serif" class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
               <thead>
-                <tr style="color:#D2691E" class="text-center">
+                <tr>
                   <th>Final</th>
                  
                 </tr>
@@ -200,7 +200,7 @@
                 <tbody>
                 <!-- Template Row -->
                 <% for (let count = 0; count < 1; count++) { %>
-                <tr style="color:white" class="text-center">
+                <tr>
                   <td><%= tournaments.WinnerFirstSemiFinal %>    <%= tournaments.ScoreThirteen %></td>
                   <td style="color:white" class="text-center"><%= tournaments.WinnerSecondSemiFinal %>    <%= tournaments.ScoreFourteen %></td>
                  
@@ -236,7 +236,7 @@
           <div style="font-family:Georgia,serif" class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
               <thead>
-                <tr style="color:#D2691E" class="text-center">
+                <tr>
                   <th>Winner</th>
                   
                 </tr>
@@ -244,7 +244,7 @@
                 <tbody>
                 <!-- Template Row -->
                 <% for (let count = 0; count < 1; count++) { %>
-                <tr style="color:white" class="text-center">
+                <tr>
                   <td><%= tournaments.WinnerFinal %></td>
                   
                 <% if (tournaments.CompleteTournament != "TRUE"&& tournaments.IsActive === "TRUE") { %>   

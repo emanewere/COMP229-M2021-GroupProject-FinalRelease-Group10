@@ -100,7 +100,7 @@ h3{
     font-family:verdana; 
 }
 .img{
-    
+    border:5px outset black;
     display: block;
   margin-left: auto;
   margin-right: auto;

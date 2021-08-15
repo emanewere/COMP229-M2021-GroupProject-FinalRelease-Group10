@@ -89,11 +89,3 @@ h3{
     text-align: center;
     
 }
-/*Logo for navbar*/
-.logo-image{
-    width: 80px;
-    height: 55px;
-    border-radius: 10%;
-    overflow: hidden;
-    margin-top: -30px;
-}

@@ -32,43 +32,43 @@
           </li>
           <% } else { %>
           <li style="font-family:Georgia, serif;" class="nav-item">
-            <span style="color:#F5DEB3" class="badge"> Hello, Guest</span>
+            <span class="badge"> Hello, Guest</span>
           </li>
           <% } %>
 
           <li style="font-family:Georgia, serif;" class="nav-item">
             <% if(page=='home') { %>
-              <a style="color:#D2691E" class="nav-link active" href="/"><i class="fas fa-home fa-lg"></i> Home</a>
+              <a style="color:brown" class="nav-link active" href="/"><i class="fas fa-home fa-lg"></i> Home</a>
             <% } else { %>
-              <a style="color:#D2691E" class="nav-link" href="/"><i class="fas fa-home fa-lg"></i> Home</a>
+              <a class="nav-link" href="/"><i class="fas fa-home fa-lg"></i> Home</a>
             <% } %>
           </li>
 
            <li style="font-family:Georgia, serif;" class="nav-item">
           <% if(page=='landing') { %>
-            <a style="color:#D2691E" class="nav-link active" href="/tournaments/landing"><i class="fas fa-plane-arrival fa-lg"></i>Active Tournaments</a>
+            <a class="nav-link active" href="/tournaments/landing"><i class="fas fa-plane-arrival fa-lg"></i>Active Tournaments</a>
           <% } else { %> 
-            <a style="color:#D2691E" class="nav-link" href="/tournaments/landing"><i class="fas fa-plane-arrival fa-lg"></i> Active Tournaments</a>
+            <a class="nav-link" href="/tournaments/landing"><i class="fas fa-plane-arrival fa-lg"></i> Active Tournaments</a>
           <% } %>
           </li>
             
            <% if(displayName) { %> 
           <li style="font-family:Georgia, serif;" class="nav-item">
           <% if(page=='tournaments') { %>
-            <a style="color:#D2691E" class="nav-link active" href="/tournaments"><i class="fas fa-chess fa-lg"></i> Tournaments</a>
+            <a class="nav-link active" href="/tournaments"><i class="fas fa-chess fa-lg"></i> Tournaments</a>
           <% } else { %> 
-            <a  style="color:#D2691E" class="nav-link" href="/tournaments"><i class="fas fa-chess fa-lg"></i> Tournaments</a>
+            <a class="nav-link" href="/tournaments"><i class="fas fa-chess fa-lg"></i> Tournaments</a>
           <% } %>
           </li>
            <% } %>
 
           <% if(displayName) { %>
           <li style="font-family:Georgia, serif;" class="nav-item">
-            <a style="color:#D2691E" class="nav-link" href="/logout"><i class="fas fa-sign-out-alt fa-lg"></i> Logout</a>
+            <a class="nav-link" href="/logout"><i class="fas fa-sign-out-alt fa-lg"></i> Logout</a>
           </li>
           <% } else { %>
           <li style="font-family:Georgia, serif;" class="nav-item">
-            <a style="color:#D2691E" class="nav-link" href="/login"><i class="fas fa-sign-in-alt fa-lg"></i> Login or Register</a>
+            <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt fa-lg"></i> Login or Register</a>
           </li>
           <% } %>
 

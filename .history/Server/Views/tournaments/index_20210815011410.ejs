@@ -9,7 +9,7 @@
           <!-- THE ADD BUTTON HAS BEEN FIXED -->
           <!-- ------------------------ -->
           <% if(displayName) { %>
-          <a href="/tournaments/add" class="btn btn-primary"><i class="fa fa-plus"></i> Create a tournament</a>
+          <a href="/tournaments/add" class="btn btn-primary;text-center"><i class="fa fa-plus"></i> Create a tournament</a>
           <% } %>
           <br>
           <div style="font-family:Georgia,serif" class="table-responsive">
@@ -29,12 +29,12 @@
                 <!-- Template Row -->
                 <% for (let count = 0; count < tournaments.length; count++) { %>
                 <% if(userName === tournaments[count].UserName ) { %>
-                <tr style="background-color:	#D2B48C">
+                <tr>
                   <td><%= tournaments[count].Name %></td>
-                  <td style="background-color:	#D2B48C" class="text-center"><%= tournaments[count].StartDate %></td>
-                  <td style="background-color:	#D2B48C" class="text-center"><%= tournaments[count].Description %></td>
+                  <td class="text-center"><%= tournaments[count].StartDate %></td>
+                  <td class="text-center"><%= tournaments[count].Description %></td>
                   
-                  <td style="background-color:	#D2B48C" class="text-center">
+                  <td class="text-center">
                     <!-- ------------------------ -->
                     <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
                     <!-- ------------------------ -->

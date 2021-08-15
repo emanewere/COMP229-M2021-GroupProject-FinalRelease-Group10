@@ -1,10 +1,10 @@
 <%- include('../partials/header.ejs'); %>
-<div id="grad1">
+
     <!-- MAIN CONTENT -->
     <div class="container">
       <div class="row">
         <div class="col-md-offset-1 col-md-10">
-          <h3 style="font-family:verdana; color:white">Your tournaments </h3>
+          <h3>Your tournaments </h3>
           <!-- ------------------------ -->
           <!-- THE ADD BUTTON HAS BEEN FIXED -->
           <!-- ------------------------ -->
@@ -16,9 +16,9 @@
             <table class="table table-bordered table-striped table-hover">
               <thead>
                 <tr>
-                  <th style="color:#D2691E" class="text-center">Name</th>
-                  <th style="color:#D2691E" class="text-center">Date</th>
-                  <th style="color:#D2691E" class="text-center">Brief description</th>
+                  <th>Name</th>
+                  <th class="text-center">Date</th>
+                  <th class="text-center">Brief description</th>
                   <% if(displayName) { %>
                   <th class="text-center"></th>
                   <th class="text-center"></th>
@@ -29,12 +29,12 @@
                 <!-- Template Row -->
                 <% for (let count = 0; count < tournaments.length; count++) { %>
                 <% if(userName === tournaments[count].UserName ) { %>
-                <tr style="background-color:	#D2B48C">
+                <tr>
                   <td><%= tournaments[count].Name %></td>
-                  <td style="background-color:	#D2B48C" class="text-center"><%= tournaments[count].StartDate %></td>
-                  <td style="background-color:	#D2B48C" class="text-center"><%= tournaments[count].Description %></td>
+                  <td class="text-center"><%= tournaments[count].StartDate %></td>
+                  <td class="text-center"><%= tournaments[count].Description %></td>
                   
-                  <td style="background-color:	#D2B48C" class="text-center">
+                  <td class="text-center">
                     <!-- ------------------------ -->
                     <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
                     <!-- ------------------------ -->
@@ -62,7 +62,7 @@
         </div>
       </div>
     </div>
-</div>
+
 <%- include('../partials/footer.ejs'); %>
 
 

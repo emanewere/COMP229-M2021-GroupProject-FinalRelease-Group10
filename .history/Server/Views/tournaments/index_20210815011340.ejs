@@ -29,12 +29,12 @@
                 <!-- Template Row -->
                 <% for (let count = 0; count < tournaments.length; count++) { %>
                 <% if(userName === tournaments[count].UserName ) { %>
-                <tr style="background-color:	#D2B48C">
+                <tr>
                   <td><%= tournaments[count].Name %></td>
-                  <td style="background-color:	#D2B48C" class="text-center"><%= tournaments[count].StartDate %></td>
-                  <td style="background-color:	#D2B48C" class="text-center"><%= tournaments[count].Description %></td>
+                  <td class="text-center"><%= tournaments[count].StartDate %></td>
+                  <td class="text-center"><%= tournaments[count].Description %></td>
                   
-                  <td style="background-color:	#D2B48C" class="text-center">
+                  <td class="text-center">
                     <!-- ------------------------ -->
                     <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
                     <!-- ------------------------ -->

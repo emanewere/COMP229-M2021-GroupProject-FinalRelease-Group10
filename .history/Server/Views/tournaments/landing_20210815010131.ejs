@@ -10,14 +10,14 @@
           <!-- ------------------------ -->
           
           <br>
-          <div style="font-family:Georgia,serif" class="table-responsive">
+          <div style="font-family:Georgia, serif" class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
               <thead>
                 <tr>
                   <th style="color:#D2691E" class="text-center">Name</th>
                   <th style="color:#D2691E" class="text-center">Date</th>
                   <th style="color:#D2691E" class="text-center">Brief description</th>
-                  <th class="text-center"></th>
+                  <th style="background-color:#D2691E" class="text-center"></th>
                   <th class="text-center"></th>
                 </tr>
                 </thead>
@@ -25,12 +25,12 @@
                 <!-- Template Row -->
                 <% for (let count = 0; count < tournaments.length; count++) { %>
                 <% if (tournaments[count].IsActive == "TRUE") { %>
-                <tr style="background-color:	#D2B48C" >
+                <tr>
                   <td><%= tournaments[count].Name %></td>
-                  <td style="background-color:	#D2B48C" class="text-center"><%= tournaments[count].StartDate %></td>
-                  <td style="background-color:	#D2B48C" class="text-center"><%= tournaments[count].Description %></td>
+                  <td style="background-color:#D2691E" class="text-center"><%= tournaments[count].StartDate %></td>
+                  <td class="text-center"><%= tournaments[count].Description %></td>
 
-                  <td style="background-color:	#D2B48C" class="text-center">
+                  <td class="text-center">
                     <!-- ------------------------ -->
                     <!-- EDIT BUTTON HAS BEEN ADDED HERE -->
                     <!-- ------------------------ -->

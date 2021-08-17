@@ -3,7 +3,7 @@
  *  File name: index.ts, 
     Author's: Ofovwe Ewere,Gagandeep Kaur,  Qiuqi Lu, Duy Hieu Nguyen, Farishta Sultani
     Web App name: The Favorite Tournament List App final release
-    Date: August 16, 2021
+    Date: August 17, 2021
  */
 // modules required for routing
 import express from 'express';

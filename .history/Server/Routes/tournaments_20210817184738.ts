@@ -2,7 +2,7 @@
  * Module dependencies.
  *  File name: tournaments.ts, 
     Author's: Ofovwe Ewere,Gagandeep Kaur,  Qiuqi Lu, Duy Hieu Nguyen, Farishta Sultani
-    Web App name: The Favorite Tournament List App final release
+    Web App name: The Favorite Tournament List App second release
     Date: August 16, 2021
  */
 // modules required for routing

@@ -4,7 +4,7 @@
     Author's:  Ofovwe Ewere,Gagandeep Kaur,  Qiuqi Lu, Duy Hieu Nguyen, Farishta Sultani
     Student's id: 301188196
     Web App name: The Favorite Book List App
-    Date: August 16, 2021
+    Date: August 17, 2021
  */
 import express, { Request, Response, NextFunction } from 'express';
 

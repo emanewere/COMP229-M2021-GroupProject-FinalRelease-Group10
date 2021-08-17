@@ -3,8 +3,8 @@
  * Module dependencies.
  *  File name: user.ts, 
     Author's: Ofovwe Ewere,Gagandeep Kaur,  Qiuqi Lu, Duy Hieu Nguyen, Farishta Sultani
-    Web App name: The Favorite Tournament List App final release
-    Date: August 16, 2021
+    Web App name: The Favorite Tournament List App second release
+    Date: August 16, 20211
  */
  import mongoose, { PassportLocalSchema } from 'mongoose';
 const Schema = mongoose.Schema; // Schema alias

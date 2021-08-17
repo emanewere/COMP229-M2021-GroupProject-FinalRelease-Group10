@@ -75,10 +75,10 @@ router.get('/:id/:match/:firstplayer/:secondplayer', Util_1.AuthGuard, (req, res
             res.end(err);
         }
         if (match === "eight") {
-            res.render('tournaments/bracketsEditTwo', { title: 'Bracketfortournament', page: 'bracketsEditTwo', tournaments: tournamentItemToEdit, displayName: Util_1.UserDisplayName(req), userName: Util_1.UserName(req) });
+            res.render('tournaments/bracketsEditTwo', { id: id, title: 'Bracketfortournament', page: 'bracketsEditTwo', tournaments: tournamentItemToEdit, displayName: Util_1.UserDisplayName(req), userName: Util_1.UserName(req) });
         }
         else {
-            res.render('tournaments/bracketsEditOne', { title: 'Bracketfortournament', page: 'bracketsEditOne', tournaments: tournamentItemToEdit, displayName: Util_1.UserDisplayName(req) });
+            res.render('tournaments/bracketsEditOne', { title: 'Bracketfortournament', page: 'bracketsEditOne', tournaments: tournamentItemToEdit, displayName: Util_1.UserDisplayName(req), playerOne: req.params.firstplayer, playerTwo: req.params.secondplayer });
         }
     });
 });
@@ -89,7 +89,7 @@ router.get('/:id/activate', Util_1.AuthGuard, (req, res, next) => {
             console.error(err);
             res.end(err);
         }
-        res.render('tournaments/activate', { title: 'Activatetournament', page: 'activate', tournaments: tournamentItemToEdit, displayName: Util_1.UserDisplayName(req) });
+        res.render('tournaments/activate', { id: id, title: 'Activatetournament', page: 'activate', tournaments: tournamentItemToEdit, displayName: Util_1.UserDisplayName(req) });
     });
 });
 router.post('/:id/activate', Util_1.AuthGuard, (req, res, next) => {
@@ -132,7 +132,9 @@ router.post('/:id/activate', Util_1.AuthGuard, (req, res, next) => {
                         console.error(err);
                         res.end(err);
                     }
-                    res.redirect('/tournaments');
+                    let id2 = req.params.id;
+                    let direction = '/tournaments/' + id2;
+                    res.redirect(direction);
                 });
             });
         }
@@ -186,7 +188,7 @@ router.post('/:id/:match/:firstplayer/:secondplayer', Util_1.AuthGuard, (req, re
                 "WinnerFinal": req.body.winnerfinal
             });
             if (match === "eight") {
-                updatedTournamentItem.Finished = "Congratulations: " + secondPlayer;
+                updatedTournamentItem.Finished = "Tournament has been completed. Congratulations " + secondPlayer + " for winning this tournament";
                 updatedTournamentItem.CompleteTournament = "TRUE";
             }
             if (match === "one") {

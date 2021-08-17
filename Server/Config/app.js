@@ -36,7 +36,7 @@ let localStrategy = passport_local_1.default.Strategy;
 const user_1 = __importDefault(require("../Models/user"));
 const connect_flash_1 = __importDefault(require("connect-flash"));
 const DBConfig = __importStar(require("./db"));
-mongoose_1.default.connect(process.env.URI || DBConfig.LocalURI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose_1.default.connect(DBConfig.RemoteURI, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose_1.default.connection;
 db.on("error", function () {
     console.error("connection error");

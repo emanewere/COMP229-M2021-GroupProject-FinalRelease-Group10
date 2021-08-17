@@ -33,7 +33,7 @@ import flash from 'connect-flash';
 // URI
 import * as DBConfig from './db';
 
-mongoose.connect(DBConfig.RemoteURI, {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.URI || DBConfig.RemoteURI, {useNewUrlParser: true, useUnifiedTopology: true});
 
 const db = mongoose.connection; // alias for the mongoose connection
 db.on("error", function()

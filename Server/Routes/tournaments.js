@@ -78,7 +78,7 @@ router.get('/:id/:match/:firstplayer/:secondplayer', Util_1.AuthGuard, (req, res
             res.render('tournaments/bracketsEditTwo', { id: id, title: 'Bracketfortournament', page: 'bracketsEditTwo', tournaments: tournamentItemToEdit, displayName: Util_1.UserDisplayName(req), userName: Util_1.UserName(req) });
         }
         else {
-            res.render('tournaments/bracketsEditOne', { title: 'Bracketfortournament', page: 'bracketsEditOne', tournaments: tournamentItemToEdit, displayName: Util_1.UserDisplayName(req), playerOne: req.params.firstplayer, playerTwo: req.params.secondplayer });
+            res.render('tournaments/bracketsEditOne', { id: id, title: 'Bracketfortournament', page: 'bracketsEditOne', tournaments: tournamentItemToEdit, displayName: Util_1.UserDisplayName(req), playerOne: req.params.firstplayer, playerTwo: req.params.secondplayer });
         }
     });
 });

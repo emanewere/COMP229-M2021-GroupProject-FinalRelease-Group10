@@ -314,7 +314,7 @@
    order: 2;
    
  }
- @media (min-width: 0.4em) {
+ @media (min-width: 24em) {
    .tournament-bracket__content .tournament-bracket__team:first-child .tournament-bracket__country {
      order: 0;
    }
@@ -328,7 +328,7 @@
  .tournament-bracket__content .tournament-bracket__team:first-child .tournament-bracket__score {
    order: 0;
  }
- @media (min-width: 0.4em) {
+ @media (min-width: 24em) {
    .tournament-bracket__content .tournament-bracket__team:first-child .tournament-bracket__score {
      order: 2;
    }
@@ -371,7 +371,7 @@
    
    
  }
- @media (min-width: 0.4em) {
+ @media (min-width: 24em) {
    .tournament-bracket__team {
      flex-direction: row;
    }
